@@ -13,13 +13,13 @@ describe("Calculator", function(){
     expect(calculator.currentTempFahr).toEqual(76);
   });
 
-  describe("given the current weather, I want to know the heat index", function(){
+  describe("given the current temperature, I want to know the heat index", function(){
     it("should output the heat index if it is hot enough", function(){
     });
 
   });
 
-  describe("given the current weather, I want to know the wind chill", function(){
+  describe("given the current temperature, I want to know the wind chill", function(){
     it("should output the wind chill if it is cold enough", function(){
     });
   });

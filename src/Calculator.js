@@ -10,3 +10,11 @@ Calculator.prototype.currentWeather = function(obj){
     throw new Error("the current weather is unknown at this time.");
   }
 };
+
+Calculator.prototype.currentWindChill = function(obj){
+  if(obj !== null && obj !== undefined) {
+    var windSpeed = obj.wind.speed;
+    var temperature = this.currentTempFahr;
+    var WIND_CHILL_CONSTANTS = [35.74, 0.6215, 35.75, 0.4275, 0.16];
+    //if(windSpeed)
+}
