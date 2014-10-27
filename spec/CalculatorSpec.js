@@ -10,17 +10,20 @@ describe("Calculator", function(){
   it("should be able to calculate either the heat index or the wind chill", function(){
     calculator.currentWeather(weather);
     expect(calculator.description).toEqual("sky is clear");
-    expect(calculator.currentTempFahr).toEqual(76);
+    expect(calculator.currentTempFahr(weather)).toEqual(76);
   });
 
   describe("given the current temperature, I want to know the heat index", function(){
     it("should output the heat index if it is hot enough", function(){
     });
-
   });
 
   describe("given the current temperature, I want to know the wind chill", function(){
-    it("should output the wind chill if it is cold enough", function(){
+    beforeEach(function() {
+        weather = new MockColdWeather();
+    });
+    it("should output the wind chill if it is cold enough", function() {
+        expect(calculator.calculateWindChill(weather)).toEqual(9);
     });
   });
 
