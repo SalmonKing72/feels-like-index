@@ -1,4 +1,6 @@
 feels-like-index
 ================
 
-a heat index and windchill calculator in pure javascript with Jasmine testing framework.
+This tells us how cold or hot it feels.
+
+Built in pure javascript with Jasmine testing framework.
