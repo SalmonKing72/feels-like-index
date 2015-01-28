@@ -4,7 +4,7 @@ describe("Calculator", function () {
         calculator;
 
     beforeEach(function () {
-        calculator = new Calculator();
+        calculator = Calculator;
         weather = new MockWeather();
     });
 
